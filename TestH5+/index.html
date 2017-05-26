@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>Hello world</title>
+    <script src="js/mui.min.js"></script>
+    <script src="js/update.js"></script>
+    <script type="text/javascript">
+    	//扩展API是否准备好，如果没有监听plusready事件
+    	if(window.plus){
+    		plusReady();
+    	}
+    	else{
+    		document.addEventListener('plusready',plusReady,false);
+    	}
+    	//扩展API准备完成后要执行的操作
+    	function plusReady(){
+    		var ws=plus.webview.currentWebview();//pw回车可输入plus.webview
+    	}
+    	//点击按钮打开新页面:打开新的webview窗口
+    	function openNewWebview(){
+    		var url='http://www.dcloud.io';
+    		plus.webview.create(url).show();
+    	}
+    	
+    	
+    	
+    	
+    	
+    </script>
+</head>
+<body>
+	Hello World<br>
+	<button onclick="openNewWebview()" type="button">打开新页面</button>
+	
+</body>
+</html>
