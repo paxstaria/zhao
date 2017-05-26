@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>主页</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="css/mui.min.css"/>
+</head>
+<body>
+    
+    <script src="js/mui.min.js" type="text/javascript" charset="utf-8"></script>
+<!-- 主界面不动、菜单移动 -->
+<!-- 侧滑导航根容器 -->
+<div class="mui-off-canvas-wrap mui-draggable mui-slide-in">
+  <!-- 菜单容器 -->
+  <aside class="mui-off-canvas-left" id="offCanvasSide">
+    <div class="mui-scroll-wrapper">
+      <div class="mui-scroll">
+        <!-- 菜单具体展示内容 -->
+        <!--折叠面板s-->
+        <ul class="mui-table-view">
+            <li class="mui-table-view-cell mui-collapse">
+                <a class="mui-navigate-right" href="#">面板1</a>
+                <div class="mui-collapse-content">
+                    <p>面板1子内容</p>
+                </div>
+            </li>
+            <li class="mui-table-view-cell mui-collapse">
+                <a class="mui-navigate-right" href="#">面板</a>
+                    <div class="mui-collapse-content">
+                    <p>面板2子内容</p>
+                </div>
+            </li>
+            <li class="mui-table-view-cell mui-collapse">
+                <a class="mui-navigate-right" href="#">面板3</a>
+                <div class="mui-collapse-content">
+                    <p>面板3子内容</p>
+                </div>
+            </li>
+        </ul>
+        <!--折叠面板e-->
+        
+        
+        
+        
+        
+      </div>
+    </div>
+  </aside>
+  <!-- 主页面容器 -->
+  <div class="mui-inner-wrap">
+    <!-- 主页面标题 -->
+    <header class="mui-bar mui-bar-nav">
+      <a class="mui-icon mui-action-menu mui-icon-bars mui-pull-left" href="#offCanvasSide"></a>
+      <h1 class="mui-title">标题</h1>
+    </header>
+
+		<nav class="mui-bar mui-bar-tab" id='myfooter'>
+			<a id="defaultTab" class="mui-tab-item mui-active" href="tab-webview-subpage-about.html">
+				<span class="mui-icon mui-icon-home"></span>
+				<span class="mui-tab-label">首页</span>
+			</a>
+			<a class="mui-tab-item" href="tab-webview-subpage-chat.html">
+				<span class="mui-icon mui-icon-email"><span class="mui-badge">9</span></span>
+				<span class="mui-tab-label">消息</span>
+			</a>
+			<a class="mui-tab-item" href="tab-webview-subpage-contact.html">
+				<span class="mui-icon mui-icon-contact"></span>
+				<span class="mui-tab-label">通讯录</span>
+			</a>
+			<a class="mui-tab-item" href="tab-webview-subpage-setting.html">
+				<span class="mui-icon mui-icon-gear"></span>
+				<span class="mui-tab-label">设置</span>
+			</a>
+		</nav>
+    <div class="mui-content mui-scroll-wrapper">
+      <div class="mui-scroll">
+        <!-- 主界面具体展示内容 -->
+        <!--图片轮播s-->
+        <div id="slider" class="mui-slider" >
+          <div class="mui-slider-group mui-slider-loop">
+            <!-- 额外增加的一个节点(循环轮播：第一个节点是最后一张轮播) -->
+            <div class="mui-slider-item mui-slider-item-duplicate">
+              <a href="#">
+                <img src="http://placehold.it/400x300">
+              </a>
+            </div>
+            <!-- 第一张 -->
+            <div class="mui-slider-item">
+              <a href="#">
+                <img src="http://placehold.it/400x300">
+              </a>
+            </div>
+            <!-- 第二张 -->
+            <div class="mui-slider-item">
+              <a href="#">
+                <img src="http://placehold.it/400x300">
+              </a>
+            </div>
+            <!-- 第三张 -->
+            <div class="mui-slider-item">
+              <a href="#">
+                <img src="http://placehold.it/400x300">
+              </a>
+            </div>
+            <!-- 第四张 -->
+            <div class="mui-slider-item">
+              <a href="#">
+                <img src="http://placehold.it/400x300">
+              </a>
+            </div>
+            <!-- 额外增加的一个节点(循环轮播：最后一个节点是第一张轮播) -->
+            <div class="mui-slider-item mui-slider-item-duplicate">
+              <a href="#">
+                <img src="http://placehold.it/400x300">
+              </a>
+            </div>
+          </div>
+          <div class="mui-slider-indicator">
+            <div class="mui-indicator mui-active"></div>
+            <div class="mui-indicator"></div>
+            <div class="mui-indicator"></div>
+            <div class="mui-indicator"></div>
+          </div>
+        </div>
+        <!--图片轮播e-->
+        <!--九宫格s-->
+        <ul class="mui-table-view mui-grid-view mui-grid-9">
+        <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+            <a href="#">
+                <span class="mui-icon mui-icon-home"></span>
+                <div class="mui-media-body">Home</div>
+            </a>
+        </li>
+        <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+            <a href="#">
+                <span class="mui-icon mui-icon-email"><span class="mui-badge mui-badge-red">5</span></span>
+                <div class="mui-media-body">Email</div>
+            </a>
+        </li>
+        <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+            <a href="#">
+                <span class="mui-icon mui-icon-chatbubble"></span>
+                <div class="mui-media-body">Chat</div>
+            </a>
+        </li>
+        <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+            <a href="#">
+                <span class="mui-icon mui-icon-location"></span>
+                <div class="mui-media-body">Location</div>
+            </a>
+        </li>
+        <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+            <a href="#">
+                <span class="mui-icon mui-icon-search"></span>
+                <div class="mui-media-body">Search</div>
+            </a>
+        </li>
+        <li class="mui-table-view-cell mui-media mui-col-xs-4 mui-col-sm-3">
+            <a href="#">
+                <span class="mui-icon mui-icon-phone"></span>
+                <div class="mui-media-body">Phone</div>
+            </a>
+        </li>
+            </ul>
+        
+        <!--九宫格e-->
+        
+        <!--图文列表s-->
+        <ul class="mui-table-view">
+            <li class="mui-table-view-cell mui-media">
+                <a href="javascript:;">
+                    <img class="mui-media-object mui-pull-left" src="http://placehold.it/40x30">
+                    <div class="mui-media-body">
+                        幸福
+                        <p class="mui-ellipsis">能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>
+                    </div>
+                </a>
+            </li>
+            <li class="mui-table-view-cell mui-media">
+                <a href="javascript:;">
+                    <img class="mui-media-object mui-pull-left" src="http://placehold.it/40x30">
+                    <div class="mui-media-body">
+                        木屋
+                        <p class="mui-ellipsis">想要这样一间小木屋，夏天挫冰吃瓜，冬天围炉取暖.</p>
+                    </div>
+                </a>
+            </li>
+            <li class="mui-table-view-cell mui-media">
+                <a href="javascript:;">
+                    <img class="mui-media-object mui-pull-left" src="http://placehold.it/40x30">
+                    <div class="mui-media-body">
+                        CBD
+                        <p class="mui-ellipsis">烤炉模式的城，到黄昏，如同打翻的调色盘一般.</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <!--图文列表e-->
+      <!--图文表格s-->
+        <div class="mui-slider">
+          <div class="mui-slider-group">
+            <!--第一个内容区容器-->
+            <div class="mui-slider-item">
+              <ul class="mui-table-view mui-grid-view">
+                  <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                      <a href="#">
+                          <img class="mui-media-object" src="http://placehold.it/400x300">
+                          <div class="mui-media-body">文字说明1</div>
+                      </a>
+                  </li>
+                  <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                      <a href="#">
+                          <img class="mui-media-object" src="http://placehold.it/400x300">
+                          <div class="mui-media-body">文字说明2</div>
+                      </a>
+                  </li>
+              </ul>
+            </div>
+            <!--第二个内容区-->
+            <div class="mui-slider-item">
+              <!-- 具体内容 -->
+              <ul class="mui-table-view mui-grid-view">
+                  <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                      <a href="#">
+                          <img class="mui-media-object" src="http://placehold.it/400x300">
+                          <div class="mui-media-body">文字说明3</div>
+                      </a>
+                  </li>
+                  <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                      <a href="#">
+                          <img class="mui-media-object" src="http://placehold.it/400x300">
+                          <div class="mui-media-body">文字说明4</div>
+                      </a>
+                  </li>
+              </ul>
+            </div>
+            <!--第三个内容区s-->
+            <div class="mui-slider-item">
+              <!-- 具体内容 -->
+              <ul class="mui-table-view mui-grid-view">
+                  <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                      <a href="#">
+                          <img class="mui-media-object" src="http://placehold.it/400x300">
+                          <div class="mui-media-body">文字说明5</div>
+                      </a>
+                  </li>
+                  <li class="mui-table-view-cell mui-media mui-col-xs-6">
+                      <a href="#">
+                          <img class="mui-media-object" src="http://placehold.it/400x300">
+                          <div class="mui-media-body">文字说明6</div>
+                      </a>
+                  </li>
+              </ul>
+            </div>
+            <!--第三个内容区e-->
+          
+          
+          
+          
+          </div>
+        </div>
+      <!--图文表格e-->
+   
+      
+      
+      </div>
+    </div>  
+    <div class="mui-off-canvas-backdrop"></div>
+  </div>
+</div>
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+mui.init();
+mui('.mui-scroll-wrapper').scroll();
+
+//var subpages = ['tab-webview-subpage-about.html', 'tab-webview-subpage-chat.html', 'tab-webview-subpage-contact.html', 'tab-webview-subpage-setting.html'];
+//			var subpage_style = {
+//				top: '45px',
+//				bottom: '51px'
+//			};
+//			
+//			var aniShow = {};
+//			
+//			 //创建子页面，首个选项卡页面显示，其它均隐藏；
+//			mui.plusReady(function() {
+//				var self = plus.webview.currentWebview();
+//				for (var i = 0; i < 4; i++) {
+//					var temp = {};
+//					var sub = plus.webview.create(subpages[i], subpages[i], subpage_style);
+//					if (i > 0) {
+//						sub.hide();
+//					}else{
+//						temp[subpages[i]] = "true";
+//						mui.extend(aniShow,temp);
+//					}
+//					self.append(sub);
+//				}
+//			});
+//			 //当前激活选项
+//			var activeTab = subpages[0];
+//			var title = document.getElementById("title");
+//			 //选项卡点击事件
+//			 
+//			mui('nav#myfooter.mui-bar-tab').on('tap', 'a', function(e) {
+//				var targetTab = this.getAttribute('href');
+//				if (targetTab == activeTab) {
+//					return;
+//				}
+//				//更换标题
+//				title.innerHTML = this.querySelector('.mui-tab-label.zhao').innerHTML;
+//				//显示目标选项卡
+//				//若为iOS平台或非首次显示，则直接显示
+//				if(mui.os.ios||aniShow[targetTab]){
+//					plus.webview.show(targetTab);
+//				}else{
+//					//否则，使用fade-in动画，且保存变量
+//					var temp = {};
+//					temp[targetTab] = "true";
+//					mui.extend(aniShow,temp);
+//					plus.webview.show(targetTab,"fade-in",300);
+//				}
+//				//隐藏当前;
+//				plus.webview.hide(activeTab);
+//				//更改当前活跃的选项卡
+//				activeTab = targetTab;
+//			});
+//			 //自定义事件，模拟点击“首页选项卡”
+//			document.addEventListener('gohome', function() {
+//				var defaultTab = document.getElementById("defaultTab");
+//				//模拟首页点击
+//				mui.trigger(defaultTab, 'tap');
+//				//切换选项卡高亮
+//				var current = document.querySelector(".mui-bar-tab>.mui-tab-item.mui-active");
+//				if (defaultTab !== current) {
+//					current.classList.remove('mui-active');
+//					defaultTab.classList.add('mui-active');
+//				}
+//			});
+</script>
+</html>
